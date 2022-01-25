@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    background-color: azure;
+}
+
+.container {  
+    display: flex;
+    flex-direction: column;
+}
+
+.Header { 
+    flex: 1;
+    order: 1;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.Header>img{
+    background-color: #f2f2f2;
+}
+
+.Header>nav
+{
+    flex: 1;
+    background-color: #f2f2f2;
+    text-align: right;
+}
+
+.Header>nav>a
+{
+    background-color: #f2f2f2;
+    text-decoration: underline;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: black;
+}
+
+.Main { 
+    flex: 1; 
+    order: 2;
+    margin-left: 2rem;
+}
+
+.Empty { 
+    flex: 1;
+    order: 3;
+}
+
+.Projects { 
+    flex: 1;
+    order: 4;
+}
+ 
+.Footer { 
+    flex: 1;
+    order: 5;
+    text-align: center;
+}
+
+h1 {
+    color: #000;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+}
