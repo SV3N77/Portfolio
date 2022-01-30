@@ -61,6 +61,7 @@ html {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
+  gap: 10rem;
 }
 
 .MainContent {
@@ -111,6 +112,13 @@ ul {
   opacity: 0.8;
 }
 
+/* .InterestsContainer{
+
+}
+
+.InterestContent {
+ 
+} */
 @media screen and (max-width: 768px) {
   .Main {
     width: 100%;
