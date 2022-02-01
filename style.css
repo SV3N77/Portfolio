@@ -74,7 +74,12 @@ html {
   align-items: center;
   background-color: #424459;
   color: whitesmoke;
+  gap: 0.5rem;
 }
+
+/* .Footer a:hover {
+  opacity: 0.8;
+} */
 
 ul {
   list-style: none;
@@ -90,7 +95,7 @@ ul {
   justify-content: space-between;
 }
 
-.content {
+.ProjectContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,27 +103,46 @@ ul {
   width: 50%;
 }
 
-.content a {
+.ProjectContent a {
   text-align: center;
 }
 
-.content img {
+.ProjectContent img {
   width: 60%;
   height: 60%;
   border-radius: 1rem;
 }
 
-.content img:hover {
+.ProjectContent img:hover {
   opacity: 0.8;
 }
 
-/* .InterestsContainer{
-
+.InterestsRow {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
 }
 
 .InterestContent {
- 
-} */
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image description";
+}
+
+.InterestContent > img {
+  grid-area: image;
+}
+
+.InterestContent > h3 {
+  grid-area: title;
+}
+
+.InterestContent > p {
+  grid-area: description;
+  width: 60%;
+}
+
 @media screen and (max-width: 768px) {
   .Main {
     width: 100%;
