@@ -9,6 +9,22 @@
   </head>
 
   <body class="container">
+    <canvas id="bg"></canvas>
+    <script type="x-shader/x-vertex" id="vertexshader">
+      attribute float alpha;
+      void main() {
+          vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+          gl_PointSize = 8.0 * alpha; // use alpha to vary point size, instead
+          gl_Position = projectionMatrix * mvPosition;
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="fragmentshader">
+      uniform vec3 color;
+      void main() {
+          gl_FragColor = vec4( color, 1 );
+      }
+    </script>
+    <script type="module" src="/Background.js"></script>
     <header class="Header" id="Top">
       <nav class="NavBar">
         <a href="home.html">
@@ -25,8 +41,9 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav>  
     </header>
+
     <main class="Main">
       <div class="MainContent">
         <h1>Welcome</h1>
