@@ -61,13 +61,13 @@ function render() {
   var count = alphas.count;
   for (var i = 0; i < count; i++) {
     // dynamically change alphas
-    alphas.array[i] *= 0.95;
+    alphas.array[i] *= 0.98;
     if (alphas.array[i] < 0.01) {
       alphas.array[i] = 1.0;
     }
   }
   alphas.needsUpdate = true; // important!
-  cloud.rotation.x += 0.005;
-  cloud.rotation.y += 0.005;
+  cloud.rotation.x += 0.004;
+  cloud.rotation.y += 0.004;
   renderer.render(scene, camera);
 }
