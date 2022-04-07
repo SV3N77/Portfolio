@@ -9,25 +9,6 @@
   </head>
 
   <body class="container">
-<<<<<<< HEAD
-    <canvas id="bg"></canvas>
-    <script type="x-shader/x-vertex" id="vertexshader">
-      attribute float alpha;
-      void main() {
-          vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-          gl_PointSize = 8.0 * alpha; // use alpha to vary point size, instead
-          gl_Position = projectionMatrix * mvPosition;
-      }
-    </script>
-    <script type="x-shader/x-fragment" id="fragmentshader">
-      uniform vec3 color;
-      void main() {
-          gl_FragColor = vec4( color, 1 );
-      }
-    </script>
-    <script type="module" src="javascript/Background.js"></script>
-=======
->>>>>>> parent of 54fc494 (Updated with three js background)
     <header class="Header" id="Top">
       <nav class="NavBar">
         <a href="home.html">
