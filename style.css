@@ -103,6 +103,8 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
+  box-shadow: gray 0 0 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .ProjectContent a {
@@ -116,7 +118,7 @@ ul {
 
 .ProjectContent img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
 
 .ProjectContent img:hover {
